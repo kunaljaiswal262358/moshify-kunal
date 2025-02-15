@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
-    --color-heading: #2d2939;
+    --color-heading: #2b2246;
     --color-body: #918ca4;
 }
+
 
 /* Typography */
 
@@ -156,4 +161,67 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+/* buttons */
+
+.button {
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.button--outline {
+    background-color: #fff;
+    color: var(--color-heading);
+    border: 2px solid var(--color-heading);
+}
+
+.button--outline:hover {
+    background-color: var(--color-heading);
+    color: #fff;
+}
+
+.button--block {
+    width: 100%;
+    display: inline-block;
+}
+
+.button--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.button--primary:hover {
+    background: #368cfc;
+}
+
+.button--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.button--secondary:hover {
+    background: #14dcff;
+}
+
+.button--accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.button--accent:hover {
+    background: #f83e0f;
+}
+
+@media screen and (min-width: 1024px) {
+    .button {
+        font-size: 1.5rem;
+    }
 }
