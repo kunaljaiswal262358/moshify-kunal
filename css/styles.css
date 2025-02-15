@@ -6,6 +6,8 @@
     --color-body: #918ca4;
 }
 
+/* Typography */
+
 html {
     font-size: 62.5%;
 }
@@ -50,5 +52,34 @@ h3 {
 
     h3 {
         font-display: 2.4rem;
+    }
+}
+
+/* links */
+
+a {
+    text-decoration: none;
+}
+
+.link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.arrow-icon {
+    font-weight: 200px;
+    margin-left: 5px;
+    transition: margin 0.3s;
+}
+
+.link-arrow:hover .arrow-icon {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
     }
 }
