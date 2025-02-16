@@ -276,20 +276,31 @@ a {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 20px 10px #f3f3f3;
+    position: relative;
 }
 
+.card--primary .card__header {
+    background-color: var(--color-primary);
+}
+
+.card--primary .badge--primary {
+    background-color: #4e99fa;
+}
+
+.card--secondary .card__header {
+    background-color: var(--color-secondary);
+}
+
+.card--secondary .badge--secondary {
+    background-color: #0fd0f1;
+}
 
 .card__header {
-    background-color: var(--color-secondary);
     padding: 2rem 2.5rem;
 }
 
 .card__header .badge {
     margin-left: 1.5rem;
-}
-
-.card__header .badge--secondary {
-    background-color: #0fd0f1;
 }
 
 .plan__name {
@@ -341,4 +352,18 @@ a {
     .plan__description {
         font-size: 1.6rem;
     }
+}
+
+/* Popular badge */
+
+.plan--popular {
+}
+
+.plan--popluar .card__header:before {
+    content: url(/images/popular.svg);
+    display: inline-block;
+    width: 40px ;
+    position: absolute;
+    right: 20px;
+    top: -5px;
 }
