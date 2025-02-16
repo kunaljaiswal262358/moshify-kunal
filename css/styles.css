@@ -129,6 +129,7 @@ a {
 .list {
     list-style: none;
     color: var(--color-heading);
+    font-size: 2rem;
 }
 
 .list--inline .list__item{
@@ -263,5 +264,81 @@ a {
 @media screen and (min-width: 1024px) {
     .input {
         font-size: 1.5rem;
+    }
+}
+
+
+/* Card */
+
+.card {
+    max-width: 500px;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+}
+
+
+.card__header {
+    background-color: var(--color-secondary);
+    padding: 2rem 2.5rem;
+}
+
+.card__header .badge {
+    margin-left: 1.5rem;
+}
+
+.card__header .badge--secondary {
+    background-color: #0fd0f1;
+}
+
+.plan__name {
+    margin-top: 0;
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.plan__price {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.plan__billing-cycle {
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.plan__description {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+.card__body {
+    padding: 0 2rem;
+}
+
+.card__body .list {
+    margin-top: 4rem;
+}
+
+.card .list--tick .list__item {
+    margin-bottom: 3rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .plan__name {
+        font-size: 1.4rem;
+    }
+
+    .plan__price {
+        font-size: 5rem;
+    }
+
+    .plan__description {
+        font-size: 1.6rem;
     }
 }
