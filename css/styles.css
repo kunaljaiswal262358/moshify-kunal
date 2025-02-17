@@ -838,3 +838,17 @@ a {
         justify-self: end;
     }
 }
+
+/* testimonial block */
+
+.testimonial-block {
+    padding: 2rem;
+}
+
+.testimonial:hover {
+    transform: scale(1);
+}
+
+.block .testimonial {
+    margin-top: 2rem;
+}
