@@ -578,3 +578,23 @@ a {
     max-height: 100%;
     opacity: 1;
 }
+
+/* block */
+.block {
+    text-align: center;
+}
+
+.block__header h2{
+    font-size: 4rem;
+}
+
+.block__header p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.container {
+    padding: 3rem;
+}
