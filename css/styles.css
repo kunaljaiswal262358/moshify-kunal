@@ -38,6 +38,7 @@ h1 {
 
 h2 {
     font-size: 4rem;
+    margin: 0;
 }
 
 h3 {
@@ -539,4 +540,41 @@ a {
     .callout-content {
         text-align: start;
     }
+}
+
+/* Collapsibles */
+
+.collapsible {
+    padding: 2rem 3rem;
+}
+
+.collapsible .collapsible__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.chevron {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.collapsible__content {
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.collapsible .collapsible__content {
+    max-height: 0;
+    opacity: 0;
+}
+
+.collapsible--expanded .chevron {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100%;
+    opacity: 1;
 }
