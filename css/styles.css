@@ -63,7 +63,7 @@ h3 {
     }
 
     h3 {
-        font-display: 2.4rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -81,7 +81,7 @@ a {
 }
 
 .arrow-icon {
-    font-weight: 200px;
+    font-weight: 200;
     margin-left: 5px;
     transition: margin 0.3s;
 }
@@ -538,6 +538,11 @@ a {
 .callout {
     background-color: var(--color-primary);
     padding: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    bottom: -50px;
+    border-radius: 10px;
 }
 
 .callout-content {
@@ -646,6 +651,8 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem;
+    background-color: #000;
+    font-size: 4rem;
 }
 
 .nav img {
@@ -741,6 +748,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .hero {
+        width: 80vw;
+        margin: 0 auto;
+    }
     .hero__content {
         text-align: start;
     }
@@ -763,6 +774,8 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 6rem);
     padding-left: 0;
+    justify-items: center;
+    align-items: center;
 }
 
 .domain__list .list__item {
@@ -795,6 +808,8 @@ a {
 .feature {
     padding: 2rem;
     margin:  8rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .feature img {
@@ -812,7 +827,7 @@ a {
 }
 
 .control-panel .list {
-    color: 0;
+    /* color: 0; */
 }
 
 .control-panel h3,
@@ -826,8 +841,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .plan-block {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .control-panel .grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 49% 49%;
     }
     .control-panel img {
         width: auto;
@@ -843,6 +862,8 @@ a {
 
 .testimonial-block {
     padding: 2rem;
+    max-width: 1040px;
+    margin: 0 auto;
 }
 
 .testimonial:hover {
@@ -901,6 +922,7 @@ a {
     }
     .footer {
         display: flex;
+        justify-content: space-around;
         font-size: 1.5rem;
         text-align: start;
     }
